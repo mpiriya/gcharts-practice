@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- loads the api -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+      // loads the visualization API
+      google.charts.load('current', {packages: ['corechart']});
+
+      // callback to run when API is loaded
+      google.charts.setOnLoadCallback(drawChart);
+
+      // import data table
+      var data = google.visualization.DataTable();
+      data.addColumn('String', 'Topping');
+      data.addColumn('number', 'Slices');
+      data.addRows([
+        ['Mushrooms', 3],
+        ['Pepperoni', 5],
+        ['Pineapple', 3],
+        ['Olives', 1],
+        ['Onions', 1]
+      ]);
+    </script>
+  </head>
+
+  <body>
+
+  </body>
+</html>
